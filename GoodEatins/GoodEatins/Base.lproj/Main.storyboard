@@ -130,11 +130,63 @@
                     <navigationItem key="navigationItem" id="yaM-0T-fBJ"/>
                     <connections>
                         <outlet property="recipesCollectionView" destination="eIz-Db-pQ3" id="AmV-kG-Dly"/>
+                        <segue destination="P5I-MV-bOf" kind="show" identifier="toDetails" id="oYb-HM-umw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uk-6x-gXM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1918.840579710145" y="126.5625"/>
+        </scene>
+        <!--Detail Recipes View Controller-->
+        <scene sceneID="Ndc-Rf-b8R">
+            <objects>
+                <viewController id="P5I-MV-bOf" customClass="DetailRecipesViewController" customModule="GoodEatins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mdY-Hk-Vig">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pasta1" translatesAutoresizingMaskIntoConstraints="NO" id="u95-Rl-doK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="dK3-O7-Cuj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian Pasta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6D-J0-kFq">
+                                <rect key="frame" x="138" y="358" width="138.5" height="32.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDo-cs-Pbq">
+                                <rect key="frame" x="20" y="410.5" width="374" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QnS-cQ-rlX" firstAttribute="trailing" secondItem="ZDo-cs-Pbq" secondAttribute="trailing" constant="20" id="ANR-Rs-L8z"/>
+                            <constraint firstItem="u95-Rl-doK" firstAttribute="leading" secondItem="QnS-cQ-rlX" secondAttribute="leading" id="BTr-gc-6uj"/>
+                            <constraint firstItem="u95-Rl-doK" firstAttribute="top" secondItem="QnS-cQ-rlX" secondAttribute="top" id="QSM-4a-c4i"/>
+                            <constraint firstItem="q6D-J0-kFq" firstAttribute="centerX" secondItem="mdY-Hk-Vig" secondAttribute="centerX" id="SMG-p6-mQK"/>
+                            <constraint firstItem="ZDo-cs-Pbq" firstAttribute="leading" secondItem="QnS-cQ-rlX" secondAttribute="leading" constant="20" id="anr-0V-Az7"/>
+                            <constraint firstItem="ZDo-cs-Pbq" firstAttribute="top" secondItem="q6D-J0-kFq" secondAttribute="bottom" constant="20" id="e5e-c7-3Xp"/>
+                            <constraint firstItem="QnS-cQ-rlX" firstAttribute="trailing" secondItem="u95-Rl-doK" secondAttribute="trailing" id="rA1-Ua-ckp"/>
+                            <constraint firstItem="q6D-J0-kFq" firstAttribute="top" secondItem="u95-Rl-doK" secondAttribute="bottom" constant="20" id="suh-dX-Ioq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QnS-cQ-rlX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8VD-VL-Rf0"/>
+                    <connections>
+                        <outlet property="detailImage" destination="u95-Rl-doK" id="YPi-QV-LeA"/>
+                        <outlet property="detailLabel" destination="ZDo-cs-Pbq" id="61l-yP-tvy"/>
+                        <outlet property="titleDetailLabel" destination="q6D-J0-kFq" id="WWE-u9-aDw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ks7-2I-Qia" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2751" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nl8-mr-Kot">
@@ -156,6 +208,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pasta1" width="676" height="900"/>
         <image name="pasta3" width="634" height="951"/>
         <image name="pasta4" width="634" height="951"/>
     </resources>

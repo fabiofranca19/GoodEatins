@@ -23,6 +23,12 @@ class RecipesViewController: UIViewController {
         
         recipes = data.getRecipes(forCategoryTitle: selectedCategory!)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? DetailRecipesViewController else{return}
+        
+        destination.recipe = sender as? Recipe
+    }
 
 }
 
@@ -48,4 +54,7 @@ extension RecipesViewController: UICollectionViewDelegate,UICollectionViewDataSo
         return CGSize(width: sizeCell, height: sizeCell)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toDetails", sender: recipes?[indexPath.item])
+    }
 }

@@ -20,6 +20,7 @@
 		E6B20EFD24D7637C00794807 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B20EFC24D7637C00794807 /* CategoryTableViewCell.swift */; };
 		E6B20EFF24D76C8800794807 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B20EFE24D76C8800794807 /* RecipesViewController.swift */; };
 		E6B20F0124D7712C00794807 /* RecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B20F0024D7712C00794807 /* RecipeCollectionViewCell.swift */; };
+		E6B20F0324D77B1000794807 /* DetailRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B20F0224D77B1000794807 /* DetailRecipesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E6B20EFC24D7637C00794807 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		E6B20EFE24D76C8800794807 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		E6B20F0024D7712C00794807 /* RecipeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewCell.swift; sourceTree = "<group>"; };
+		E6B20F0224D77B1000794807 /* DetailRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				E6B20EE024D7574E00794807 /* HomeViewController.swift */,
 				E6B20EFE24D76C8800794807 /* RecipesViewController.swift */,
+				E6B20F0224D77B1000794807 /* DetailRecipesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				E6B20EDD24D7574E00794807 /* AppDelegate.swift in Sources */,
 				E6B20EF924D7591100794807 /* Recipe.swift in Sources */,
 				E6B20EF724D7581700794807 /* FoodCategory.swift in Sources */,
+				E6B20F0324D77B1000794807 /* DetailRecipesViewController.swift in Sources */,
 				E6B20EFB24D7594A00794807 /* DataSet.swift in Sources */,
 				E6B20EDF24D7574E00794807 /* SceneDelegate.swift in Sources */,
 				E6B20EFD24D7637C00794807 /* CategoryTableViewCell.swift in Sources */,
