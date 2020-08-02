@@ -14,6 +14,9 @@
 		E6B20EE724D7574E00794807 /* GoodEatins.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6B20EE524D7574E00794807 /* GoodEatins.xcdatamodeld */; };
 		E6B20EE924D7575100794807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6B20EE824D7575100794807 /* Assets.xcassets */; };
 		E6B20EEC24D7575100794807 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B20EEA24D7575100794807 /* LaunchScreen.storyboard */; };
+		E6B20EF724D7581700794807 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B20EF624D7581700794807 /* FoodCategory.swift */; };
+		E6B20EF924D7591100794807 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B20EF824D7591100794807 /* Recipe.swift */; };
+		E6B20EFB24D7594A00794807 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B20EFA24D7594A00794807 /* DataSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		E6B20EE824D7575100794807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6B20EEB24D7575100794807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6B20EED24D7575100794807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6B20EF624D7581700794807 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
+		E6B20EF824D7591100794807 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		E6B20EFA24D7594A00794807 /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 		E6B20EDB24D7574E00794807 /* GoodEatins */ = {
 			isa = PBXGroup;
 			children = (
+				E6B20EF524D757F900794807 /* Controller */,
+				E6B20EF424D757F400794807 /* View */,
+				E6B20EF324D757E700794807 /* Model */,
 				E6B20EDC24D7574E00794807 /* AppDelegate.swift */,
 				E6B20EDE24D7574E00794807 /* SceneDelegate.swift */,
 				E6B20EE024D7574E00794807 /* ViewController.swift */,
@@ -68,6 +77,30 @@
 				E6B20EE524D7574E00794807 /* GoodEatins.xcdatamodeld */,
 			);
 			path = GoodEatins;
+			sourceTree = "<group>";
+		};
+		E6B20EF324D757E700794807 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6B20EF624D7581700794807 /* FoodCategory.swift */,
+				E6B20EF824D7591100794807 /* Recipe.swift */,
+				E6B20EFA24D7594A00794807 /* DataSet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6B20EF424D757F400794807 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E6B20EF524D757F900794807 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +177,9 @@
 				E6B20EE724D7574E00794807 /* GoodEatins.xcdatamodeld in Sources */,
 				E6B20EE124D7574E00794807 /* ViewController.swift in Sources */,
 				E6B20EDD24D7574E00794807 /* AppDelegate.swift in Sources */,
+				E6B20EF924D7591100794807 /* Recipe.swift in Sources */,
+				E6B20EF724D7581700794807 /* FoodCategory.swift in Sources */,
+				E6B20EFB24D7594A00794807 /* DataSet.swift in Sources */,
 				E6B20EDF24D7574E00794807 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
