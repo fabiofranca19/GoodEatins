@@ -17,6 +17,7 @@
 		E6B20EF724D7581700794807 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B20EF624D7581700794807 /* FoodCategory.swift */; };
 		E6B20EF924D7591100794807 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B20EF824D7591100794807 /* Recipe.swift */; };
 		E6B20EFB24D7594A00794807 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B20EFA24D7594A00794807 /* DataSet.swift */; };
+		E6B20EFD24D7637C00794807 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B20EFC24D7637C00794807 /* CategoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E6B20EF624D7581700794807 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
 		E6B20EF824D7591100794807 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		E6B20EFA24D7594A00794807 /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		E6B20EFC24D7637C00794807 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,6 @@
 				E6B20EF324D757E700794807 /* Model */,
 				E6B20EDC24D7574E00794807 /* AppDelegate.swift */,
 				E6B20EDE24D7574E00794807 /* SceneDelegate.swift */,
-				E6B20EE024D7574E00794807 /* ViewController.swift */,
 				E6B20EE224D7574E00794807 /* Main.storyboard */,
 				E6B20EE824D7575100794807 /* Assets.xcassets */,
 				E6B20EEA24D7575100794807 /* LaunchScreen.storyboard */,
@@ -92,6 +93,7 @@
 		E6B20EF424D757F400794807 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E6B20EFC24D7637C00794807 /* CategoryTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +101,7 @@
 		E6B20EF524D757F900794807 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E6B20EE024D7574E00794807 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				E6B20EF724D7581700794807 /* FoodCategory.swift in Sources */,
 				E6B20EFB24D7594A00794807 /* DataSet.swift in Sources */,
 				E6B20EDF24D7574E00794807 /* SceneDelegate.swift in Sources */,
+				E6B20EFD24D7637C00794807 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
