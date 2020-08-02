@@ -19,6 +19,13 @@ class HomeViewController: UIViewController {
         categoryTableVIew.delegate = self
         categoryTableVIew.dataSource = self
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let recipesDestination = segue.destination as? RecipesViewController {
+            guard let selectedCategory = sender as? String else{return}
+            recipesDestination.selectedCategory = selectedCategory
+        }
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -35,6 +42,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toRecipes", sender: data.categories[indexPath.row].title)
     }
     
 }
